@@ -1,0 +1,19 @@
+diff --git a/inputtext/index.d.ts b/inputtext/index.d.ts
+index 3309d610cfd1311f1b980305767dbf525b0a6eeb..5187eb1cb3b90da22e7695194239158377681265 100644
+--- a/inputtext/index.d.ts
++++ b/inputtext/index.d.ts
+@@ -152,12 +152,12 @@ export interface InputTextEmitsOptions {
+      * Emitted when the value changes.
+      * @param {string} value - New value.
+      */
+-    'update:modelValue'(value: string | undefined): void;
++    'update:modelValue'(value: string): void;
+     /**
+      * Emitted when the value changes in uncontrolled mode.
+      * @param {string} value - New value.
+      */
+-    'value-change'(value: string | undefined): void;
++    'value-change'(value: string): void;
+ }
+ 
+ export declare type InputTextEmits = EmitFn<InputTextEmitsOptions>;
